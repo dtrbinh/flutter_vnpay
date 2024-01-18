@@ -7,29 +7,28 @@ flutter_hl_vnpay is a VNPay plugin for [Flutter](https://flutter.dev), a new app
 In the **ios/Runner/Info.plist** let’s add:
 
 ```dart
+	<key>NSAppTransportSecurity</key>
 	<dict>
-	     <key>NSAppTransportSecurity</key>
-          <dict>
-                <key>NSAllowsArbitraryLoads</key>
-                <true/>
-                <key>NSAllowsArbitraryLoadsInWebContent</key>
-                <true/>
-          </dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSAllowsArbitraryLoadsInWebContent</key>
+		<true/>
+	</dict>
 ```
 
 ```dart
    	<key>CFBundleURLTypes</key>
    	<array>
-   		<dict>
-   			<key>CFBundleTypeRole</key>
-   			<string>Editor</string>
-   			<key>CFBundleURLName</key>
-   			<string>com.hlsolutions.hoishipper</string>
-   			<key>CFBundleURLSchemes</key>
-   			<array>
-   				<string>hlsolutions</string>
-   			</array>
-   		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.hlsolutions.hoishipper</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>hlsolutions</string>
+			</array>
+		</dict>
    	</array>
 
 ```
